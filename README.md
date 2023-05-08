@@ -1,11 +1,11 @@
 # toytorch
 
-This repository was initiated in order to accomplish the following two goals:
+This repository was initiated to achieve the following two goals:
 
-1. Learn the detailed structure of the most standard neural network architectures, their training and basic capabilities.
+1. Learn the detailed structure of the standard neural network architectures, their training and basic capabilities.
 2. Learn how to use the Pytorch library for deep learning.
 
-The result of this undertaking is the "toytorch" package, which implements the most common neural network tools from scratch, using a similar structure as the Pytorch library. Instead of using numpy to perform tensor manipulations, toytorch is built on pytorch tensors due to the following two advantages:
+The result of this undertaking is the "toytorch" package, which implements the most common neural network tools from scratch, using a similar structure as the Pytorch library. Instead of using numpy to perform tensor manipulations, toytorch is built from torch tensors due to the following two advantages:
 
 - Automatic differentiation via autograd.
 - Cuda support to run computations on GPU.
