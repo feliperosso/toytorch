@@ -40,6 +40,8 @@ class Convolution(torch.nn.Module):
 
         """ Construct projector used to expand the size of the input (during forward)
         in order to account for overlaps of the kernel when computing the convolution """ 
+        # Note: Instead of constructing this tensor to perform the projection, one could directly
+        # do the projection using the "as_strided" command on the input. This would more likely be more efficient.
         n_kernel, m_kernel = kernel_size
         n_in, m_in = image_size
         # Take padding into account
